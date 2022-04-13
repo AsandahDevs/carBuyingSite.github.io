@@ -51,7 +51,7 @@ function validateForm(){
      printError("nameErr","Please fill in your username");
                  }
             else{                                                       
-            let regex=/^[a-z][a-z]+\d*$/gi;                             /*checking if the user has entered  valid data using regular expressions*/
+            let regex=/^[a-z]\d*$/gi;                             /*checking if the user has entered  valid data using regular expressions*/
                 if(regex.test(name)===false){
                     printError("nameErr","Please provide valid username");
                                          
