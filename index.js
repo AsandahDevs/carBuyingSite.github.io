@@ -37,7 +37,7 @@ function printError(elemID,message){
 //creating a function that validates userdata.
 function validateForm(){
     //retrieving values from html 'form' elements through their input names.
-    const name=document.form.names.value;
+    const name=document.form.username.value;
     const password=document.form.credentials.value;
 
 
@@ -51,7 +51,7 @@ function validateForm(){
      printError("nameErr","Please fill in your username");
                  }
             else{                                                       
-            let regex=/[a-zA-z]/g;                             /*checking if the user has entered  valid data using regular expressions*/
+            let regex=/^[a-z][a-z]\d*$/gi;                             /*checking if the user has entered  valid data using regular expressions*/
                 if(regex.test(name)===false){
                     printError("nameErr","Please provide valid username");
                                          
@@ -66,7 +66,7 @@ function validateForm(){
         printError("passwordErr","Please fill in your password");
                     }
             else{                                                       
-            let regex=/[a-zA-Z\d]/g;                             /*checking if the user has entered  valid data using regular expressions*/
+            let regex=/[a-zA-Z\d]/gi;                             /*checking if the user has entered  valid data using regular expressions*/
                 if(regex.test(password)===false){
                     printError("passwordErr","Please provide a valid password");
                                                         }
@@ -88,4 +88,5 @@ function validateForm(){
 
 const formData=document.querySelector('form');
 formData.addEventListener('click',validateForm);
+
 

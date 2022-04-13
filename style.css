@@ -106,3 +106,7 @@ hr{
     color:red;
 }
 
+.card-img-top:hover{
+   transform:rotate(45deg);
+}
+
