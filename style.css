@@ -109,4 +109,9 @@ hr{
 .card-img-top:hover{
    transform:rotate(45deg);
 }
-
+.hidden{
+    display:none;
+}
+#searcher{
+    border:1rem solid transparent;
+}
