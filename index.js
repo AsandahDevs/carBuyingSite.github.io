@@ -89,15 +89,10 @@ function validateForm(){
 const formData=document.querySelector('form');
 formData.addEventListener('click',validateForm);
 
-//A feature to search & filter contents according to user input.
-//Accessing elements via DOM .
-let cards=document.querySelectorAll('.card'); 
-
-let searchBox=document.getElementById('searcher');
-
-//A function to perfom the filtering operation.
+//A function to perfom a filtering operation.
 function searchFilter(){
     let searchBoxValue=document.getElementById('searcher').value;
+    let cards=document.querySelectorAll('.card');
       for(let i=0;i<cards.length;i++){
         if(cards[i].textContent.toLowerCase().includes(searchBoxValue.toLowerCase())){
             cards[i].classList.remove('hidden');
@@ -109,4 +104,4 @@ function searchFilter(){
 };
 
 //An eventlistener that will 'listen' to any user inputs in order to invoke the 'searchFilter' function.
-searchBox.addEventListener('input',searchFilter);
+document.getElementById('searcher').addEventListener('input',searchFilter);
