@@ -118,26 +118,21 @@
       <section class="container bg-gradient mt-5 p-5 text-white">
         <form name="form">
           <div class="mb-2">
-            <label class="form-label" for="userId"
-              >UserName<br />(Hint: Alphanumeric usernames should be
-              used)</label
-            >
+            <label class="form-label" for="userId">UserName</label>
             <input
               type="text"
               name="username"
               id="userId"
-              placeholder="John007 "
+              placeholder="John Doe"
               class="form-control"
               style="width: 300px"
+              pattern="[A-Za-z\s]+"
+              title="Alphanumeric names are not allowed"
               required
             />
-            <div class="error" id="nameErr"></div>
           </div>
           <div class="mb-2">
-            <label class="form-label" for="keyword"
-              >Password <br />(Hint: for a strong password include lowercases
-              and atleast a digit)</label
-            >
+            <label class="form-label" for="keyword">Password</label>
             <input
               type="password"
               id="keyword"
@@ -145,9 +140,11 @@
               placeholder="****"
               class="form-control"
               style="width: 300px"
+              pattern="[a-z]+[0-9]+"
+              title="Alphanumeric names only"
               required
             />
-            <div class="error" id="passwordErr"></div>
+            <!--The pattern attribute allows for a regular expression in order to match against user input data for validation-->
           </div>
           <div class="mb-2">
             <label class="form-check-label"
