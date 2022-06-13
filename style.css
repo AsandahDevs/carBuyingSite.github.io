@@ -1,129 +1,136 @@
-body{
-    background-color: black;
-    background-image: repeating-conic-gradient(blue 10%,black 20%);
-    padding-top: 70px;
-    content: " ";
+body {
+  background-color: black;
+  background-image: repeating-conic-gradient(blue 10%, black 20%);
+  padding-top: 70px;
+  content: " ";
 }
+
 /* Setting the stroke property to green using rgb values (0, 0, 255) */
-          
+
 .custom-toggler .navbar-toggler-icon {
-    background-image: url(
-"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
- /* Sets the hamburger menu border color */
-          
- .custom-toggler.navbar-toggler {
-    border-color:blue;
+/* Sets the hamburger menu border color */
+
+.custom-toggler.navbar-toggler {
+  border-color: blue;
 }
 
-::-webkit-scrollbar{
-    width: 10px;
+::-webkit-scrollbar {
+  width: 10px;
 }
-::-webkit-scrollbar-track{
-    background-color: aliceblue;
-    border-radius: 10px;
+::-webkit-scrollbar-track {
+  background-color: aliceblue;
+  border-radius: 10px;
 }
-::-webkit-scrollbar-thumb{
-    background:lightskyblue;
-    border-radius: 10px;
+::-webkit-scrollbar-thumb {
+  background: lightskyblue;
+  border-radius: 10px;
 }
-::-webkit-scrollbar-thumb:hover{
-    background:blue;
-    border-radius: 10px;
+::-webkit-scrollbar-thumb:hover {
+  background: blue;
+  border-radius: 10px;
 }
-.nav-link:hover{
-    color:antiquewhite;
+.nav-link:hover {
+  color: antiquewhite;
 }
-.nav-link{
-    color: black;
+.nav-link {
+  color: black;
 }
-.nav{
-    display: flex;
-    flex-direction: row;
-    column-gap: 5px;
-}
-
-@media only screen and  (max-width: 578px){
-    .nav{
-        display:grid;
-        grid-template-columns: 150px 150px;
-        grid-gap:10px
-    }
+.nav {
+  display: flex;
+  flex-direction: row;
+  column-gap: 5px;
 }
 
-.page-link:hover{
-        background-color:lightskyblue;
-}
-
-.grid{
-    color: burlywood;
+@media only screen and (max-width: 578px) {
+  .nav {
     display: grid;
-    grid-template-columns:repeat(auto-fit,315px) ;
-    justify-content: center;
-}
-p{
-    color:white;
-}
-figcaption{
-    border:10px solid white ;
-    text-align: center;
+    grid-template-columns: 150px 150px;
+    grid-gap: 10px;
+  }
 }
 
-.bi-heart:hover{
-    color:red;
-}
-.bi-heart{
-    float: right;
+.page-link:hover {
+  background-color: lightskyblue;
 }
 
-.card-text{
- color:black;
+.grid {
+  color: burlywood;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 315px);
+  justify-content: center;
 }
-.border{
-    border:  solid white;
-    background-color: dodgerblue;
+p {
+  color: white;
 }
-hr{
-    color:white;
-}
-.bi-apple{
-    color:gray;
-}
-.bi-xbox{
-    color:green;
-}
-.bi-facebook{
-    color:lightblue;
-}
-.bi-youtube{
-    color:red;
-}
-.bi-twitter{
-    color:blue;
-}
-.bi-instagram{
-    border-radius: 30%;
-    background: radial-gradient(circle at 30% , #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%) !important;
-    -webkit-background-clip:text ;
-    /* Defining standard property for compatibility */
-    background-clip:text;
-    -webkit-text-fill-color: transparent;
-}
-.bi-suit-heart{
-    float: right;
+figcaption {
+  border: 10px solid white;
+  text-align: center;
 }
 
-.error{
-    color:red;
+.bi-heart:hover {
+  color: red;
+}
+.bi-heart {
+  float: right;
 }
 
-.card-img-top:hover{
-   transform:rotate(45deg);
+.card-text {
+  color: black;
 }
-.hidden{
-    display:none;
+.border {
+  border: solid white;
+  background-color: dodgerblue;
 }
-#searcher{
-    border:1rem solid transparent;
+hr {
+  color: white;
+}
+.bi-apple {
+  color: gray;
+}
+.bi-xbox {
+  color: green;
+}
+.bi-facebook {
+  color: lightblue;
+}
+.bi-youtube {
+  color: red;
+}
+.bi-twitter {
+  color: blue;
+}
+.bi-instagram {
+  border-radius: 30%;
+  background: radial-gradient(
+    circle at 30%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  ) !important;
+  -webkit-background-clip: text;
+  /* Defining standard property for compatibility */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.bi-suit-heart {
+  float: right;
+}
+
+.error {
+  color: red;
+}
+
+.card-img-top:hover {
+  transform: rotate(45deg);
+}
+.hidden {
+  display: none;
+}
+#searcher {
+  border: 1rem solid transparent;
 }
