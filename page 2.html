@@ -1,248 +1,407 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Author" content="Asanda Majola">
-    <meta name="keywords" content="HTML,CSS,Javascript,mock,car site">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Author" content="Asanda Majola" />
+    <meta name="keywords" content="HTML,CSS,Javascript,mock,car site" />
     <!--loading bootstrap via a CDN-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <!--loading bootstrap icons-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
     <!--importing a =n external CSS file-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>motortrader</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navbar navbar-expand-md navbar-light bg-info fixed-top">
-        <div class="container">
-            <a href="#" class="navbar-brand"><i class="bi-globe2"></i><em> Motortrader</em></a>
-            <button type="button" class="navbar-toggler custom-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon "></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav">
-                    <a href="index.html" class="nav-item nav-link active"><i class="bi-house-door-fill"></i> Home</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="bi-bag-plus-fill"></i> Buy a car</a>
-                            <div class="dropdown-menu">
-                                <a href="#" class="dropdown-item">New & Used Cars For Sale</a>
-                                <a href="#" class="dropdown-item">Find a Dealer</a>
-                                <a href="#" class="dropdown-item">New Car Specials</a>
-                                <a href="#" class="dropdown-item">Used Car Specials</a>
-                                <a href="#" class="dropdown-item">Car Research</a>
-                            </div>
-                    </div>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="bi-bag-dash-fill"></i> Sell a car</a>
-                            <div class="dropdown-menu ">
-                                <a href="#" class="dropdown-item">Get an Instant Offer</a>
-                                <a href="#" class="dropdown-item">Sell a Car</a>
-                            </div>
-                    </div>
-                    <a href="#" class="nav-item nav-link" id="scriptOne"><i class="bi-tag-fill"></i>Car Valuation</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="bi-newspaper"></i> News & Reviews</a>
-                            <div class="dropdown-menu">
-                                <a href="#" class="dropdown-item">Automotive News & Advice</a>
-                                <a href="#" class="dropdown-item">Expert Car Reviews</a>
-                                <a href="#" class="dropdown-item">Ask motortrader</a>
-                                <a href="#" class="dropdown-item">#motorcentral podcasts</a>
-                            </div>
-                        </div>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="bi-tools"></i> Tools & Services</a>
-                            <div class="dropdown-menu">
-                                <a href="#" class="dropdown-item" id="scriptTwo">Finance Calculator</a>
-                                <a href="#" class="dropdown-item" id="scriptThree">Car Finance</a>
-                                <a href="#" class="dropdown-item" id="scriptFour">Car Insurance</a>
-                                <a href="#" class="dropdown-item" id="scriptFive">Vehicle Check</a>
-                            </div>
-                        </div>
-                        <a href="page 5.html" class="nav-item nav-link"><i class="bi-person-fill"></i>Sign in for your Shortlist</a>
-                    </div>
+      <div class="container">
+        <a href="#" class="navbar-brand"
+          ><i class="bi-globe2"></i><em> Motortrader</em></a
+        >
+        <button
+          type="button"
+          class="navbar-toggler custom-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav">
+            <a href="index.html" class="nav-item nav-link active"
+              ><i class="bi-house-door-fill"></i> Home</a
+            >
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                ><i class="bi-bag-plus-fill"></i> Buy a car</a
+              >
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">New & Used Cars For Sale</a>
+                <a href="#" class="dropdown-item">Find a Dealer</a>
+                <a href="#" class="dropdown-item">New Car Specials</a>
+                <a href="#" class="dropdown-item">Used Car Specials</a>
+                <a href="#" class="dropdown-item">Car Research</a>
+              </div>
             </div>
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                ><i class="bi-bag-dash-fill"></i> Sell a car</a
+              >
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Get an Instant Offer</a>
+                <a href="#" class="dropdown-item">Sell a Car</a>
+              </div>
+            </div>
+            <a href="#" class="nav-item nav-link" id="scriptOne"
+              ><i class="bi-tag-fill"></i>Car Valuation</a
+            >
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                ><i class="bi-newspaper"></i> News & Reviews</a
+              >
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Automotive News & Advice</a>
+                <a href="#" class="dropdown-item">Expert Car Reviews</a>
+                <a href="#" class="dropdown-item">Ask motortrader</a>
+                <a href="#" class="dropdown-item">#motorcentral podcasts</a>
+              </div>
+            </div>
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                ><i class="bi-tools"></i> Tools & Services</a
+              >
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item" id="scriptTwo"
+                  >Finance Calculator</a
+                >
+                <a href="#" class="dropdown-item" id="scriptThree"
+                  >Car Finance</a
+                >
+                <a href="#" class="dropdown-item" id="scriptFour"
+                  >Car Insurance</a
+                >
+                <a href="#" class="dropdown-item" id="scriptFive"
+                  >Vehicle Check</a
+                >
+              </div>
+            </div>
+            <a href="page 5.html" class="nav-item nav-link"
+              ><i class="bi-person-fill"></i>Sign in for your Shortlist</a
+            >
+          </div>
         </div>
-    </nav>  
+      </div>
+    </nav>
     <main>
-        <section class=" bg-primary mt-5 py-3 "> 
-           <h1>Find New and Used Cars</h1>
-           <form class="d-flex">
-            <div class="input-group">                    
-                <input type="text" class="form-control" placeholder="search make & model.." id="searcher">
-            </div>
+      <section class="bg-primary mt-5 py-3">
+        <h1>Find New and Used Cars</h1>
+        <form class="d-flex">
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="search make & model.."
+              id="searcher"
+            />
+          </div>
         </form>
         <div class="row">
-            <div class="col-sm-3">
-                <a href="#" class="nav-link">
-                <i class="bi-cash-coin"></i> Retail Price
-                </a>
-            </div>
-            <div class="col-sm-6">
-                <a href="#" class="nav-link">
-                <i class="bi-calculator"></i>Estimated Price<sup> <i class="bi-info-circle"></i></sup>
-                </a>
-            </div>
+          <div class="col-sm-3">
+            <a href="#" class="nav-link">
+              <i class="bi-cash-coin"></i> Retail Price
+            </a>
+          </div>
+          <div class="col-sm-6">
+            <a href="#" class="nav-link">
+              <i class="bi-calculator"></i>Estimated Price<sup>
+                <i class="bi-info-circle"></i
+              ></sup>
+            </a>
+          </div>
         </div>
-        <nav class="nav ms-2 ">
-                <div class=" dropdown">
-                    <button type="button" class="btn btn-info dropdown-toggle " id="dropdownMenuButton"data-bs-toggle="dropdown">
-                    Min Price
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a href="#" class="dropdown-item">R50 0000</a>
-                        <a href="#" class="dropdown-item">R100 000</a>
-                        <a href="#" class="dropdown-item">R150 000</a>
-                        <a href="#" class="dropdown-item">R200 000</a>
-                    </div>
-                </div>   
-                <div class=" dropdown">
-                    <button type="button" class="btn btn-info dropdown-toggle " id="dropdownMenuButton"data-bs-toggle="dropdown">
-                    Max Price
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a href="#" class="dropdown-item">R300 000</a>
-                        <a href="#" class="dropdown-item">R500 000</a>
-                        <a href="#" class="dropdown-item">R750 000</a>
-                        <a href="#" class="dropdown-item">R1 000 000</a>
-                        <a href="#" class="dropdown-item">R1 500 000</a>
-                        <a href="#" class="dropdown-item">R2 000 000</a>
-                        <a href="#" class="dropdown-item">R2 500 000</a>
-                        <a href="#" class="dropdown-item">R3 000 000</a>
-                        <a href="#" class="dropdown-item">R3 500 000</a>
-                        <a href="#" class="dropdown-item">R4 000 000</a>
-                        <a href="#" class="dropdown-item">R4 500 000</a>
-                        <a href="#" class="dropdown-item">R5 000 000</a>
-                        <a href="#" class="dropdown-item">R5 500 000</a>
-                    </div>
-                </div>  
+        <nav class="nav ms-2">
+          <div class="dropdown">
+            <button
+              type="button"
+              class="btn btn-info dropdown-toggle"
+              id="dropdownMenuButton"
+              data-bs-toggle="dropdown"
+            >
+              Min Price
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a href="#" class="dropdown-item">R50 0000</a>
+              <a href="#" class="dropdown-item">R100 000</a>
+              <a href="#" class="dropdown-item">R150 000</a>
+              <a href="#" class="dropdown-item">R200 000</a>
             </div>
-                <div class=" dropdown">
-                    <button type="button" class="btn btn-info dropdown-toggle" id="dropdownMenuButton"data-bs-toggle="dropdown">
-                    Location
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a href="#" class="dropdown-item">KwaZulu-Natal</a>
-                        <a href="#" class="dropdown-item">Guateng</a>
-                        <a href="#" class="dropdown-item">Western-Cape</a>
-                        <a href="#" class="dropdown-item">Easten-Cape</a>
-                        <a href="#" class="dropdown-item">Northen-Cape</a>
-                        <a href="#" class="dropdown-item">Free-state</a>
-                        <a href="#" class="dropdown-item">North-west</a>
-                        <a href="#" class="dropdown-item">Mpumalanga</a>
-                        <a href="#" class="dropdown-item">Limpompo</a>
-                    </div>
-                </div>   
-                <div class=" dropdown">
-                    <button type="button" class="btn btn-info dropdown-toggle" id="dropdownMenuButton"data-bs-toggle="dropdown">
-                    Body-type
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a href="#" class="dropdown-item">Sedan</a>
-                        <a href="#" class="dropdown-item">Hatchback</a>
-                        <a href="#" class="dropdown-item">SUV</a>
-                        <a href="#" class="dropdown-item">Double Cab</a>
-                        <a href="#" class="dropdown-item">Coupe</a>
-                    </div>
-                </div> 
+          </div>
+          <div class="dropdown">
+            <button
+              type="button"
+              class="btn btn-info dropdown-toggle"
+              id="dropdownMenuButton"
+              data-bs-toggle="dropdown"
+            >
+              Max Price
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a href="#" class="dropdown-item">R300 000</a>
+              <a href="#" class="dropdown-item">R500 000</a>
+              <a href="#" class="dropdown-item">R750 000</a>
+              <a href="#" class="dropdown-item">R1 000 000</a>
+              <a href="#" class="dropdown-item">R1 500 000</a>
+              <a href="#" class="dropdown-item">R2 000 000</a>
+              <a href="#" class="dropdown-item">R2 500 000</a>
+              <a href="#" class="dropdown-item">R3 000 000</a>
+              <a href="#" class="dropdown-item">R3 500 000</a>
+              <a href="#" class="dropdown-item">R4 000 000</a>
+              <a href="#" class="dropdown-item">R4 500 000</a>
+              <a href="#" class="dropdown-item">R5 000 000</a>
+              <a href="#" class="dropdown-item">R5 500 000</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button
+              type="button"
+              class="btn btn-info dropdown-toggle"
+              id="dropdownMenuButton"
+              data-bs-toggle="dropdown"
+            >
+              Location
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a href="#" class="dropdown-item">KwaZulu-Natal</a>
+              <a href="#" class="dropdown-item">Guateng</a>
+              <a href="#" class="dropdown-item">Western-Cape</a>
+              <a href="#" class="dropdown-item">Easten-Cape</a>
+              <a href="#" class="dropdown-item">Northen-Cape</a>
+              <a href="#" class="dropdown-item">Free-state</a>
+              <a href="#" class="dropdown-item">North-west</a>
+              <a href="#" class="dropdown-item">Mpumalanga</a>
+              <a href="#" class="dropdown-item">Limpompo</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button
+              type="button"
+              class="btn btn-info dropdown-toggle"
+              id="dropdownMenuButton"
+              data-bs-toggle="dropdown"
+            >
+              Body-type
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a href="#" class="dropdown-item">Sedan</a>
+              <a href="#" class="dropdown-item">Hatchback</a>
+              <a href="#" class="dropdown-item">SUV</a>
+              <a href="#" class="dropdown-item">Double Cab</a>
+              <a href="#" class="dropdown-item">Coupe</a>
+            </div>
+          </div>
         </nav>
-        </section>
-        <section class="m-2" >
-            <p><a href="index.html"><Strong>Home</Strong></a > > Cars for sale</p>
-            <p class="text-center border">16 Results Sort By <a href="#" class="text-white">Default</a></p>
-            <div class="container">
-                <div class="card m-2" style="max-width: 800px;">
-                    <div class="row g-0 ">
-                        <div class="col-sm-5">
-                            <img src="https://asandahdevs.github.io/carBuyingSite.github.io/images/Golf R.jfif" class="card-img-top h-100" alt="image">
-                        </div>
-                        <div class="col-sm-7">
-                            <div class="card-body"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-suit-heart" onclick="colorChange(this)" viewBox="0 0 16 16">
-                                <path d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"/>
-                              </svg>
-                                <h2 class="card-title">R819 900</h2>
-                                <p class="card-text">R15 086 p/m</p>
-                                <h3>Volkswagen Golf R Hatchback</h3>
-                                <h4>Used Car</h4>
-                                <p class="card-text">2020- 27 000 km- automatic</p>
-                                <i class="bi-geo-alt-fill">Century-city,Western-Cape</i>
-                            </div>
-                        </div>
-                    </div>
+      </section>
+      <section class="m-2">
+        <p>
+          <a href="index.html"><strong>Home</strong></a> > Cars for sale
+        </p>
+        <p class="text-center border">
+          16 Results Sort By <a href="#" class="text-white">Default</a>
+        </p>
+        <div class="container">
+          <div class="card m-2" style="max-width: 800px">
+            <div class="row g-0">
+              <div class="col-sm-5">
+                <img
+                  src="https://asandahdevs.github.io/carBuyingSite.github.io/images/Golf R.jfif"
+                  class="card-img-top h-100"
+                  alt="image"
+                />
+              </div>
+              <div class="col-sm-7">
+                <div class="card-body">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-suit-heart"
+                    onclick="colorChange(this)"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"
+                    />
+                  </svg>
+                  <h2 class="card-title">R819 900</h2>
+                  <p class="card-text">R15 086 p/m</p>
+                  <h3>Volkswagen Golf R Hatchback</h3>
+                  <h4>Used Car</h4>
+                  <p class="card-text">2020- 27 000 km- automatic</p>
+                  <i class="bi-geo-alt-fill">Century-city,Western-Cape</i>
                 </div>
-                <div class="card m-2" style="max-width: 800px;">
-                    <div class="row g-0 ">
-                        <div class="col-sm-5">
-                            <img src="https://asandahdevs.github.io/carBuyingSite.github.io/images/Hyundai i30n.jfif" class="card-img-top h-100" alt="image">
-                        </div>
-                        <div class="col-sm-7">
-                            <div class="card-body"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-suit-heart" onclick="colorChange(this)" viewBox="0 0 16 16">
-                                <path d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"/>
-                              </svg>
-                                <h2 class="card-title">R550 000</h2>
-                                <p class="card-text">R10 180 p/m</p>
-                                <h3>Hyundai i30 N Hatchback</h3>
-                                <h4>Used Car</h4>
-                                <p class="card-text">2020- 67 030 km- Manual</p>
-                                <i class="bi-geo-alt-fill">Hillcrest-central,KwaZulu-Natal</i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card m-2" style="max-width: 800px;">
-                    <div class="row g-0 ">
-                        <div class="col-sm-5">
-                            <img src="https://asandahdevs.github.io/carBuyingSite.github.io/images/Golf 8 gti.jfif" class="card-img-top h-100" alt="image">
-                        </div>
-                        <div class="col-sm-7">
-                            <div class="card-body"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-suit-heart" onclick="colorChange(this)" viewBox="0 0 16 16">
-                                <path d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"/>
-                              </svg>
-                                <h2 class="card-title">R990 000</h2>
-                                <p class="card-text">R18 550 p/m</p>
-                                <h3>VW Golf Mark 8 GTI Hatchback</h3>
-                                <h4>New Car</h4>
-                                <p class="card-text">2022- 280 km- automatic</p>
-                                <i class="bi-geo-alt-fill">Umhlanga,KwaZulu-Natal</i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card m-2" style="max-width: 800px;">
-                    <div class="row g-0 ">
-                        <div class="col-sm-5">
-                            <img src="https://asandahdevs.github.io/carBuyingSite.github.io/images/Merc AMG A45s.jfif" class="card-img-top h-100" alt="image">
-                        </div>
-                        <div class="col-sm-7">
-                            <div class="card-body"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-suit-heart" onclick="colorChange(this)" viewBox="0 0 16 16">
-                                <path d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"/>
-                              </svg>
-                                <h2 class="card-title">R1 550 000</h2>
-                                <p class="card-text">R30 000 p/m</p>
-                                <h3>Mercedes AMG A45s Hatchback</h3>
-                                <h4>New Car</h4>
-                                <p class="card-text">2022- 141 km- automatic</p>
-                                <i class="bi-geo-alt-fill">Corporate Park,Gauteng</i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-            <nav>
-                <ul class="pagination justify-content-center">
-                    <li class="page-item disabled"><a href="#" class="page-link">&laquo;</a></li>
-                    <li class="page-item "><a href="index.html" class="page-link">1</a></li>
-                    <li class="page-item active"><a href="page 2.html" class="page-link">2</a></li>
-                    <li class="page-item"><a href="page 3.html" class="page-link">3</a></li>
-                    <li class="page-item"><a href="page 4.html" class="page-link">4</a></li>
-                    <li class="page-item"><a href="page 5.html" class="page-link">5</a></li>
-                    <li class="page-item disabled"><a href="#" class="page-link">&raquo;</a></li>
-                </ul>
-            </nav>
-<!--loading a JS bundle with Popper-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
-<!--importing an external Javascript file-->  
-<script defer src="index.js"></script>
-</body>
+          </div>
+          <div class="card m-2" style="max-width: 800px">
+            <div class="row g-0">
+              <div class="col-sm-5">
+                <img
+                  src="https://asandahdevs.github.io/carBuyingSite.github.io/images/Hyundai i30n.jfif"
+                  class="card-img-top h-100"
+                  alt="image"
+                />
+              </div>
+              <div class="col-sm-7">
+                <div class="card-body">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-suit-heart"
+                    onclick="colorChange(this)"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"
+                    />
+                  </svg>
+                  <h2 class="card-title">R550 000</h2>
+                  <p class="card-text">R10 180 p/m</p>
+                  <h3>Hyundai i30 N Hatchback</h3>
+                  <h4>Used Car</h4>
+                  <p class="card-text">2020- 67 030 km- Manual</p>
+                  <i class="bi-geo-alt-fill">Hillcrest-central,KwaZulu-Natal</i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card m-2" style="max-width: 800px">
+            <div class="row g-0">
+              <div class="col-sm-5">
+                <img
+                  src="https://asandahdevs.github.io/carBuyingSite.github.io/images/Golf 8 gti.jfif"
+                  class="card-img-top h-100"
+                  alt="image"
+                />
+              </div>
+              <div class="col-sm-7">
+                <div class="card-body">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-suit-heart"
+                    onclick="colorChange(this)"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"
+                    />
+                  </svg>
+                  <h2 class="card-title">R990 000</h2>
+                  <p class="card-text">R18 550 p/m</p>
+                  <h3>VW Golf Mark 8 GTI Hatchback</h3>
+                  <h4>New Car</h4>
+                  <p class="card-text">2022- 280 km- automatic</p>
+                  <i class="bi-geo-alt-fill">Umhlanga,KwaZulu-Natal</i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card m-2" style="max-width: 800px">
+            <div class="row g-0">
+              <div class="col-sm-5">
+                <img
+                  src="https://asandahdevs.github.io/carBuyingSite.github.io/images/Merc AMG A45s.jfif"
+                  class="card-img-top h-100"
+                  alt="image"
+                />
+              </div>
+              <div class="col-sm-7">
+                <div class="card-body">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-suit-heart"
+                    onclick="colorChange(this)"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"
+                    />
+                  </svg>
+                  <h2 class="card-title">R1 550 000</h2>
+                  <p class="card-text">R30 000 p/m</p>
+                  <h3>Mercedes AMG A45s Hatchback</h3>
+                  <h4>New Car</h4>
+                  <p class="card-text">2022- 141 km- automatic</p>
+                  <i class="bi-geo-alt-fill">Corporate Park,Gauteng</i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav>
+          <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+              <a href="#" class="page-link">&laquo;</a>
+            </li>
+            <li class="page-item">
+              <a href="index.html" class="page-link">1</a>
+            </li>
+            <li class="page-item active">
+              <a href="page 2.html" class="page-link">2</a>
+            </li>
+            <li class="page-item">
+              <a href="page 3.html" class="page-link">3</a>
+            </li>
+            <li class="page-item">
+              <a href="page 4.html" class="page-link">4</a>
+            </li>
+            <li class="page-item">
+              <a href="page 5.html" class="page-link">5</a>
+            </li>
+            <li class="page-item disabled">
+              <a href="#" class="page-link">&raquo;</a>
+            </li>
+          </ul>
+        </nav>
+        <!--loading a JS bundle with Popper-->
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+          crossorigin="anonymous"
+        ></script>
+        <!--importing an external Javascript file-->
+        <script defer src="index.js"></script>
+      </section>
+    </main>
+  </body>
 </html>

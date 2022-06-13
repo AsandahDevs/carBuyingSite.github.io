@@ -1,470 +1,829 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Author" content="Asanda Majola">
-    <meta name="keywords" content="HTML,CSS,Javascript,mock,car site">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Author" content="Asanda Majola" />
+    <meta name="keywords" content="HTML,CSS,Javascript,mock,car site" />
     <!--loading bootstrap via a CDN-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <!--loading bootstrap icons-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
     <!--importing an external CSS file-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>motortrader</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navbar navbar-expand-md navbar-light bg-info fixed-top">
-        <div class="container">
-            <a href="#" class="navbar-brand"><i class="bi-globe2"></i><em> Motortrader</em></a>
-            <button type="button" class="navbar-toggler custom-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon "></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav">
-                    <a href="index.html" class="nav-item nav-link active"><i class="bi-house-door-fill"></i> Home</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="bi-bag-plus-fill"></i> Buy a car</a>
-                            <div class="dropdown-menu">
-                                <a href="#" class="dropdown-item">New & Used Cars For Sale</a>
-                                <a href="#" class="dropdown-item">Find a Dealer</a>
-                                <a href="#" class="dropdown-item">New Car Specials</a>
-                                <a href="#" class="dropdown-item">Used Car Specials</a>
-                                <a href="#" class="dropdown-item">Car Research</a>
-                            </div>
-                    </div>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="bi-bag-dash-fill"></i> Sell a car</a>
-                            <div class="dropdown-menu ">
-                                <a href="#" class="dropdown-item">Get an Instant Offer</a>
-                                <a href="#" class="dropdown-item">Sell a Car</a>
-                            </div>
-                    </div>
-                    <a href="#" class="nav-item nav-link" id="scriptOne"><i class="bi-tag-fill"></i>Car Valuation</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="bi-newspaper"></i> News & Reviews</a>
-                        <div class="dropdown-menu">
-                            <a href="#" class="dropdown-item">Automotive News & Advice</a>
-                            <a href="#" class="dropdown-item">Expert Car Reviews</a>
-                            <a href="#" class="dropdown-item">Ask motortrader</a>
-                            <a href="#" class="dropdown-item">#motorcentral podcasts</a>
-                        </div>
-                    </div>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="bi-tools"></i> Tools & Services</a>
-                        <div class="dropdown-menu">
-                            <a href="#" class="dropdown-item" id="scriptTwo">Finance Calculator</a>
-                            <a href="#" class="dropdown-item" id="scriptThree">Car Finance</a>
-                            <a href="#" class="dropdown-item" id="scriptFour">Car Insurance</a>
-                            <a href="#" class="dropdown-item" id="scriptFive">Vehicle Check</a>
-                        </div>
-                    </div>
-                    <a href="page 5.html" class="nav-item nav-link"><i class="bi-person-fill"></i>Sign in for your Shortlist</a>
-                </div>
+      <div class="container">
+        <a href="#" class="navbar-brand"
+          ><i class="bi-globe2"></i><em> Motortrader</em></a
+        >
+        <button
+          type="button"
+          class="navbar-toggler custom-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav">
+            <a href="index.html" class="nav-item nav-link active"
+              ><i class="bi-house-door-fill"></i> Home</a
+            >
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                ><i class="bi-bag-plus-fill"></i> Buy a car</a
+              >
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">New & Used Cars For Sale</a>
+                <a href="#" class="dropdown-item">Find a Dealer</a>
+                <a href="#" class="dropdown-item">New Car Specials</a>
+                <a href="#" class="dropdown-item">Used Car Specials</a>
+                <a href="#" class="dropdown-item">Car Research</a>
+              </div>
             </div>
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                ><i class="bi-bag-dash-fill"></i> Sell a car</a
+              >
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Get an Instant Offer</a>
+                <a href="#" class="dropdown-item">Sell a Car</a>
+              </div>
+            </div>
+            <a href="#" class="nav-item nav-link" id="scriptOne"
+              ><i class="bi-tag-fill"></i>Car Valuation</a
+            >
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                ><i class="bi-newspaper"></i> News & Reviews</a
+              >
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Automotive News & Advice</a>
+                <a href="#" class="dropdown-item">Expert Car Reviews</a>
+                <a href="#" class="dropdown-item">Ask motortrader</a>
+                <a href="#" class="dropdown-item">#motorcentral podcasts</a>
+              </div>
+            </div>
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                ><i class="bi-tools"></i> Tools & Services</a
+              >
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item" id="scriptTwo"
+                  >Finance Calculator</a
+                >
+                <a href="#" class="dropdown-item" id="scriptThree"
+                  >Car Finance</a
+                >
+                <a href="#" class="dropdown-item" id="scriptFour"
+                  >Car Insurance</a
+                >
+                <a href="#" class="dropdown-item" id="scriptFive"
+                  >Vehicle Check</a
+                >
+              </div>
+            </div>
+            <a href="page 5.html" class="nav-item nav-link"
+              ><i class="bi-person-fill"></i>Sign in for your Shortlist</a
+            >
+          </div>
         </div>
+      </div>
     </nav>
     <main>
-        <section class=" bg-primary mt-5 py-3 "> 
-           <h1>Find New and Used Cars</h1>
-           <form class="d-flex">
-            <div class="input-group">                    
-                <input type="search" class="form-control" placeholder="search make & model..." id="searcher">
-            </div>
+      <section class="bg-primary mt-5 py-3">
+        <h1>Find New and Used Cars</h1>
+        <form class="d-flex">
+          <div class="input-group">
+            <input
+              type="search"
+              class="form-control"
+              placeholder="search make & model..."
+              id="searcher"
+            />
+          </div>
         </form>
         <div class="row">
-            <div class="col-sm-3">
-                <a href="#" class="nav-link">
-                <i class="bi-cash-coin"></i> Retail Price
-                </a>
+          <div class="col-sm-3">
+            <a href="#" class="nav-link">
+              <i class="bi-cash-coin"></i> Retail Price
+            </a>
+          </div>
+          <div class="col-sm-6">
+            <a href="#" class="nav-link">
+              <i class="bi-calculator"></i>Estimated Price<sup>
+                <i class="bi-info-circle"></i
+              ></sup>
+            </a>
+          </div>
+        </div>
+        <nav class="nav ms-2">
+          <div class="dropdown">
+            <button
+              type="button"
+              class="btn btn-info dropdown-toggle"
+              id="dropdownMenuButton"
+              data-bs-toggle="dropdown"
+            >
+              Min Price
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a href="#" class="dropdown-item">R50 0000</a>
+              <a href="#" class="dropdown-item">R100 000</a>
+              <a href="#" class="dropdown-item">R150 000</a>
+              <a href="#" class="dropdown-item">R200 000</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button
+              type="button"
+              class="btn btn-info dropdown-toggle"
+              id="dropdownMenuButton"
+              data-bs-toggle="dropdown"
+            >
+              Max Price
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a href="#" class="dropdown-item">R300 000</a>
+              <a href="#" class="dropdown-item">R500 000</a>
+              <a href="#" class="dropdown-item">R750 000</a>
+              <a href="#" class="dropdown-item">R1 000 000</a>
+              <a href="#" class="dropdown-item">R1 500 000</a>
+              <a href="#" class="dropdown-item">R2 000 000</a>
+              <a href="#" class="dropdown-item">R2 500 000</a>
+              <a href="#" class="dropdown-item">R3 000 000</a>
+              <a href="#" class="dropdown-item">R3 500 000</a>
+              <a href="#" class="dropdown-item">R4 000 000</a>
+              <a href="#" class="dropdown-item">R4 500 000</a>
+              <a href="#" class="dropdown-item">R5 000 000</a>
+              <a href="#" class="dropdown-item">R5 500 000</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button
+              type="button"
+              class="btn btn-info dropdown-toggle"
+              id="dropdownMenuButton"
+              data-bs-toggle="dropdown"
+            >
+              Location
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a href="#" class="dropdown-item">KwaZulu-Natal</a>
+              <a href="#" class="dropdown-item">Guateng</a>
+              <a href="#" class="dropdown-item">Western-Cape</a>
+              <a href="#" class="dropdown-item">Easten-Cape</a>
+              <a href="#" class="dropdown-item">Northen-Cape</a>
+              <a href="#" class="dropdown-item">Free-state</a>
+              <a href="#" class="dropdown-item">North-west</a>
+              <a href="#" class="dropdown-item">Mpumalanga</a>
+              <a href="#" class="dropdown-item">Limpompo</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button
+              type="button"
+              class="btn btn-info dropdown-toggle"
+              id="dropdownMenuButton"
+              data-bs-toggle="dropdown"
+            >
+              Body-type
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a href="#" class="dropdown-item">Sedan</a>
+              <a href="#" class="dropdown-item">Hatchback</a>
+              <a href="#" class="dropdown-item">SUV</a>
+              <a href="#" class="dropdown-item">Double Cab</a>
+              <a href="#" class="dropdown-item">Coupe</a>
+            </div>
+          </div>
+        </nav>
+      </section>
+      <section class="m-2">
+        <p>
+          <a href="Homepage.html"><strong>Home</strong></a> > Cars for sale
+        </p>
+        <p class="text-center border">
+          16 Results Sort By <a href="#" class="text-white">Default</a>
+        </p>
+        <p class="text-center"><em>-Featured-listings-</em></p>
+        <div class="grid">
+          <figure>
+            <figcaption>
+              <img
+                src="https://asandahdevs.github.io/carBuyingSite.github.io/images/AMG C63.jfif"
+                alt="image"
+                width="290px"
+                height="193"
+              />
+              <h2>R2 000 000</h2>
+              <p>R36 800 p/m</p>
+              <h3>Mercedes AMG C Class C63s Coupe</h3>
+              <h4>Used Car</h4>
+              <p>2020-8 500 km-automatic</p>
+              <i class="bi-geo-fill">Umhlanga Rocks,KwaZulu-Natal</i>
+            </figcaption>
+          </figure>
+          <figure>
+            <figcaption>
+              <img
+                src="https://asandahdevs.github.io/carBuyingSite.github.io/images/Merc G63.jfif"
+                alt="image"
+                width="290px"
+                height="193"
+              />
+              <h2>R4 200 000</h2>
+              <p>R82 800 p/m</p>
+              <h3>Mercedes AMG G-Class G63 SUV</h3>
+              <h4>New Car</h4>
+              <p>2022- 90 km-automatic</p>
+              <i class="bi-geo-fill">Morningside,KwaZulu-Natal</i>
+            </figcaption>
+          </figure>
+          <figure>
+            <figcaption>
+              <img
+                src="https://asandahdevs.github.io/carBuyingSite.github.io/images/Lamborghini Urus.jfif"
+                alt="image"
+                width="290px"
+                height="193"
+              />
+              <h2>R5 500 000</h2>
+              <p>R104 862 p/m</p>
+              <h3>Lamborghini Urus 4-Door Coupe</h3>
+              <h4>Used Car</h4>
+              <p>2019- 5 000 km-automatic</p>
+              <i class="bi-geo-fill">Kramerville,Gauteng</i>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="container">
+          <div class="card m-2" style="max-width: 800px">
+            <div class="row g-0">
+              <div class="col-sm-5">
+                <img
+                  src="https://asandahdevs.github.io/carBuyingSite.github.io/images/rolls-royce-cullinan-tuning-mansory-black-blue-0.jpg"
+                  class="card-img-top h-100"
+                  alt="image"
+                />
+              </div>
+              <div class="col-sm-7">
+                <div class="card-body">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-suit-heart"
+                    onclick="colorChange(this)"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"
+                    />
+                  </svg>
+                  <h2 class="card-title">POA</h2>
+                  <h3>Rolls Royce Cullinan SUV</h3>
+                  <h4>New Car</h4>
+                  <p class="card-text">2022- 148 km- automatic</p>
+                  <i class="bi-geo-alt-fill">Melrose North,Gauteng</i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card m-2" style="max-width: 800px">
+            <div class="row g-0">
+              <div class="col-sm-5">
+                <img
+                  src="https://asandahdevs.github.io/carBuyingSite.github.io/images/BMW X7.jfif"
+                  class="card-img-top h-100"
+                  alt="image"
+                />
+              </div>
+              <div class="col-sm-7">
+                <div class="card-body">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-suit-heart"
+                    onclick="colorChange(this)"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"
+                    />
+                  </svg>
+                  <h2 class="card-title">R3 000 000</h2>
+                  <p class="card-text">R55 000 p/m</p>
+                  <h3>BMW X7 SUV</h3>
+                  <h4>Used Car</h4>
+                  <p class="card-text">2021- 9 900 km- automatic</p>
+                  <i class="bi-geo-alt-fill"
+                    >Umhlanga Ridgeside,KwaZulu-Natal</i
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card m-2" style="max-width: 800px">
+            <div class="row g-0">
+              <div class="col-sm-5">
+                <img
+                  src="https://asandahdevs.github.io/carBuyingSite.github.io/images/Range rover sport.jfif"
+                  class="card-img-top h-100"
+                  alt="image"
+                />
+              </div>
+              <div class="col-sm-7">
+                <div class="card-body">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-suit-heart"
+                    onclick="colorChange(this)"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"
+                    />
+                  </svg>
+                  <h2 class="card-title">R3 700 000</h2>
+                  <p class="card-text">R65 700 p/m</p>
+                  <h3>Land Rover Range Rover sport SVR SUV</h3>
+                  <h4>New Car</h4>
+                  <p class="card-text">2022- 148 km- automatic</p>
+                  <i class="bi-geo-alt-fill">Kloof,KwaZulu-Natal</i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card m-2" style="max-width: 800px">
+            <div class="row g-0">
+              <div class="col-sm-5">
+                <img
+                  src="https://asandahdevs.github.io/carBuyingSite.github.io/images/Bentley Bentayga W12.jfif"
+                  class="card-img-top h-100"
+                  alt="image"
+                />
+              </div>
+              <div class="col-sm-7">
+                <div class="card-body">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-suit-heart"
+                    onclick="colorChange(this)"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"
+                    />
+                  </svg>
+                  <h2 class="card-title">R3 500 000</h2>
+                  <p class="card-text">R64 400 p/m</p>
+                  <h3>Bentley Bentayga W12 SUV</h3>
+                  <h4>Used Car</h4>
+                  <p class="card-text">2017- 48 000 km- automatic</p>
+                  <i class="bi-geo-alt-fill"
+                    >Mount Edgecombe Country Estate,KwaZulu-Natal</i
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav>
+          <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+              <a href="#" class="page-link">&laquo;</a>
+            </li>
+            <li class="page-item active">
+              <a href="index.html" class="page-link">1</a>
+            </li>
+            <li class="page-item">
+              <a href="page 2.html" class="page-link">2</a>
+            </li>
+            <li class="page-item">
+              <a href="page 3.html" class="page-link">3</a>
+            </li>
+            <li class="page-item">
+              <a href="page 4.html" class="page-link">4</a>
+            </li>
+            <li class="page-item">
+              <a href="page 5.html" class="page-link">5</a>
+            </li>
+            <li class="page-item disabled">
+              <a href="#" class="page-link">&raquo;</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <section class="bg-primary">
+        <div class="container">
+          <h2>Popular Dealers</h2>
+          <p><a href="#" class="text-white nav-link">View all dealers</a></p>
+          <div class="row justify-content-center py-3">
+            <div class="col-sm-2 m-1">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="https://asandahdevs.github.io/carBuyingSite.github.io/images/autotrader.png"
+                  alt="autotrader"
+                  height="150"
+                />
+                <div class="card-body">
+                  <button class="btn btn-primary">
+                    <a
+                      href="https://www.autotrader.co.za/cars-for-sale?gclid=CjwKCAjwuYWSBhByEiwAKd_n_ubb_JgKPD-UTm9MihiOCOeTf9ZZxXx6O9cic_R8GZN1lszVIbUX7BoCcloQAvD_BwE"
+                      target="_blank"
+                      class="nav-link"
+                      >Click me</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-2 m-1">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="https://asandahdevs.github.io/carBuyingSite.github.io/images/carwow.png"
+                  alt="carwow"
+                  height="150"
+                />
+                <div class="card-body">
+                  <button class="btn btn-primary">
+                    <a
+                      href="https://www.carwow.co.uk/#gref"
+                      target="_blank"
+                      class="nav-link"
+                      >Click me</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-2 m-1">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="https://asandahdevs.github.io/carBuyingSite.github.io/images/webuycars.png"
+                  alt="webuycars"
+                  height="150"
+                />
+                <div class="card-body">
+                  <button class="btn btn-primary">
+                    <a
+                      href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwi4seu51-n2AhUX1ncKHYk4DZ8YABAAGgJlZg&ae=2&ohost=www.google.com&cid=CAESaeD2p2Ol3z4dF8MFVI1Ghcucpvd1ZNrARxLo9Gup-b2grFztGNZwKJcxINfDN0HrR-sGRcRk4oI46haAjCgVGK7TYSdjSxnq_rgBebOTfGW-WGLlk3dRn2aaWMvfI8FXsYnWYBxZM5L0tQ&sig=AOD64_2010HbrSc-BCso5EfF5xjiFUdHTQ&q&adurl&ved=2ahUKEwiByOK51-n2AhXGSvEDHdliBFQQ0Qx6BAgDEAE"
+                      target="_blank"
+                      class="nav-link"
+                      >Click me</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-2 m-1">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="https://asandahdevs.github.io/carBuyingSite.github.io/images/cars_4_africa.png"
+                  alt="cars_4_africa"
+                  height="150"
+                />
+                <div class="card-body">
+                  <button class="btn btn-primary">
+                    <a
+                      href="https://cars4africa.co.za/"
+                      target="_blank"
+                      class="nav-link"
+                      >Click me</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-2 m-1">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="https://asandahdevs.github.io/carBuyingSite.github.io/images/the_car-dealer.png"
+                  alt="the car dealer"
+                  height="150"
+                />
+                <div class="card-body">
+                  <button class="btn btn-primary">
+                    <a
+                      href="https://www.thecardealer.co.za/"
+                      target="_blank"
+                      class="nav-link"
+                      >Click me</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <h2 class="text-white">Related Car Reviews</h2>
+          <div class="row py-3">
+            <div class="col-sm-3 m-1">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="https://asandahdevs.github.io/carBuyingSite.github.io/images/A merc.jfif"
+                  alt="A merc"
+                  height="150"
+                />
+                <div class="card-body text-start">
+                  <h3 class="lead"><strong>Mercedes C200 (2022)</strong></h3>
+                  <p class="card-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <button type="submit" class="btn btn-info">
+                    Read More &raquo;
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 m-1">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="https://asandahdevs.github.io/carBuyingSite.github.io/images/A beemer.jfif"
+                  alt="A beemer"
+                  height="150"
+                />
+                <div class="card-body text-start">
+                  <h3 class="lead"><strong>BMW 5 series(2022)</strong></h3>
+                  <p class="card-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <button type="submit" class="btn btn-info">
+                    Read More &raquo;
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 m-1">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="https://asandahdevs.github.io/carBuyingSite.github.io/images/Audi RS3.jfif"
+                  alt="An audi rs3"
+                  height="150"
+                />
+                <div class="card-body text-start">
+                  <h3 class="lead"><strong>Audi RS 3 (2022)</strong></h3>
+                  <p class="card-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <button type="submit" class="btn btn-info">
+                    Read More &raquo;
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 m-1">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="https://asandahdevs.github.io/carBuyingSite.github.io/images/Golf 8 gti.jfif"
+                  alt="mark 8 gti"
+                  height="150"
+                />
+                <div class="card-body text-start">
+                  <h3 class="lead"><strong>VW Golf 8 GTI (2021)</strong></h3>
+                  <p class="card-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <button type="submit" class="btn btn-info">
+                    Read More &raquo;
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-primary">
+        <div class="container">
+          <div class="row p-3">
+            <div class="col-sm-6">
+              <p><strong>Sign-up to our weekly Newsletter</strong></p>
             </div>
             <div class="col-sm-6">
-                <a href="#" class="nav-link">
-                <i class="bi-calculator"></i>Estimated Price<sup> <i class="bi-info-circle"></i></sup>
-                </a>
+              <form>
+                <div class="input-group">
+                  <input
+                    type="email"
+                    placeholder="email..."
+                    class="form-control"
+                    required
+                  />
+                  <button type="button" class="btn btn-info btn-sm mx-2">
+                    <a href="#" class="nav-link" onclick="alert('Success!')"
+                      >Sign-up</a
+                    >
+                  </button>
+                </div>
+              </form>
             </div>
+          </div>
         </div>
-        <nav class="nav ms-2 ">
-                <div class=" dropdown">
-                    <button type="button" class="btn btn-info dropdown-toggle " id="dropdownMenuButton"data-bs-toggle="dropdown">
-                    Min Price
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a href="#" class="dropdown-item">R50 0000</a>
-                        <a href="#" class="dropdown-item">R100 000</a>
-                        <a href="#" class="dropdown-item">R150 000</a>
-                        <a href="#" class="dropdown-item">R200 000</a>
-                    </div>
-                </div>   
-                <div class=" dropdown">
-                    <button type="button" class="btn btn-info dropdown-toggle " id="dropdownMenuButton"data-bs-toggle="dropdown">
-                    Max Price
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a href="#" class="dropdown-item">R300 000</a>
-                        <a href="#" class="dropdown-item">R500 000</a>
-                        <a href="#" class="dropdown-item">R750 000</a>
-                        <a href="#" class="dropdown-item">R1 000 000</a>
-                        <a href="#" class="dropdown-item">R1 500 000</a>
-                        <a href="#" class="dropdown-item">R2 000 000</a>
-                        <a href="#" class="dropdown-item">R2 500 000</a>
-                        <a href="#" class="dropdown-item">R3 000 000</a>
-                        <a href="#" class="dropdown-item">R3 500 000</a>
-                        <a href="#" class="dropdown-item">R4 000 000</a>
-                        <a href="#" class="dropdown-item">R4 500 000</a>
-                        <a href="#" class="dropdown-item">R5 000 000</a>
-                        <a href="#" class="dropdown-item">R5 500 000</a>
-                    </div>
-                </div>  
-            </div>
-                <div class=" dropdown">
-                    <button type="button" class="btn btn-info dropdown-toggle" id="dropdownMenuButton"data-bs-toggle="dropdown">
-                    Location
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a href="#" class="dropdown-item">KwaZulu-Natal</a>
-                        <a href="#" class="dropdown-item">Guateng</a>
-                        <a href="#" class="dropdown-item">Western-Cape</a>
-                        <a href="#" class="dropdown-item">Easten-Cape</a>
-                        <a href="#" class="dropdown-item">Northen-Cape</a>
-                        <a href="#" class="dropdown-item">Free-state</a>
-                        <a href="#" class="dropdown-item">North-west</a>
-                        <a href="#" class="dropdown-item">Mpumalanga</a>
-                        <a href="#" class="dropdown-item">Limpompo</a>
-                    </div>
-                </div>   
-                <div class=" dropdown">
-                    <button type="button" class="btn btn-info dropdown-toggle" id="dropdownMenuButton"data-bs-toggle="dropdown">
-                    Body-type
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a href="#" class="dropdown-item">Sedan</a>
-                        <a href="#" class="dropdown-item">Hatchback</a>
-                        <a href="#" class="dropdown-item">SUV</a>
-                        <a href="#" class="dropdown-item">Double Cab</a>
-                        <a href="#" class="dropdown-item">Coupe</a>
-                    </div>
-                </div> 
-        </nav>
-        </section>
-        <section class="m-2" >
-            <p><a href="Homepage.html"><Strong>Home</Strong></a > > Cars for sale</p>
-            <p class="text-center border">16 Results Sort By <a href="#" class="text-white">Default</a></p>
-            <p class="text-center"><em>-Featured-listings-</em></p>
-            <div class="grid">
-                <figure>
-                    <figcaption>
-                        <img src="https://asandahdevs.github.io/carBuyingSite.github.io/images/AMG C63.jfif" alt="image" width="290px" height="193">
-                        <h2>R2 000 000</h2>
-                                <p>R36 800 p/m</p>
-                                <h3>Mercedes AMG C Class C63s Coupe</h3>
-                                <h4>Used Car</h4>
-                                <p>2020-8 500 km-automatic</p>
-                                <i class="bi-geo-fill">Umhlanga Rocks,KwaZulu-Natal</i>
-                    </figcaption>
-                </figure>
-                    <figure>
-                        <figcaption>
-                            <img src="https://asandahdevs.github.io/carBuyingSite.github.io/images/Merc G63.jfif" alt="image" width="290px" height="193">
-                            <h2>R4 200 000</h2>
-                                    <p>R82 800 p/m</p>
-                                    <h3>Mercedes AMG G-Class G63 SUV</h3>
-                                    <h4>New Car</h4>
-                                    <p>2022- 90 km-automatic</p>
-                                    <i class="bi-geo-fill">Morningside,KwaZulu-Natal</i>
-                        </figcaption>
-                    </figure>
-                    <figure>
-                        <figcaption>
-                            <img src="https://asandahdevs.github.io/carBuyingSite.github.io/images/Lamborghini Urus.jfif" alt="image" width="290px" height="193">
-                            <h2>R5 500 000</h2>
-                                    <p>R104 862 p/m</p>
-                                    <h3>Lamborghini Urus 4-Door Coupe</h3>
-                                    <h4>Used Car</h4>
-                                    <p>2019- 5 000 km-automatic</p>
-                                    <i class="bi-geo-fill">Kramerville,Gauteng</i>
-                        </figcaption>
-                    </figure>
-            </div>
-            <div class="container">
-                <div class="card m-2" style="max-width: 800px;">
-                    <div class="row g-0">
-                        <div class="col-sm-5">
-                            <img src="https://asandahdevs.github.io/carBuyingSite.github.io/images/rolls-royce-cullinan-tuning-mansory-black-blue-0.jpg" class="card-img-top h-100" alt="image">
-                        </div>
-                        <div class="col-sm-7">
-                            <div class="card-body"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-suit-heart" onclick="colorChange(this)"  viewBox="0 0 16 16">
-                                <path d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"/>
-                              </svg>
-                                <h2 class="card-title">POA</h2>
-                                <h3>Rolls Royce Cullinan SUV</h3>
-                                <h4>New Car</h4>
-                                <p class="card-text">2022- 148 km- automatic</p>
-                                <i class="bi-geo-alt-fill">Melrose North,Gauteng</i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card m-2" style="max-width: 800px;">
-                    <div class="row g-0 ">
-                        <div class="col-sm-5">
-                            <img src="https://asandahdevs.github.io/carBuyingSite.github.io/images/BMW X7.jfif" class="card-img-top h-100" alt="image">
-                        </div>
-                        <div class="col-sm-7">
-                            <div class="card-body"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-suit-heart" onclick="colorChange(this)" viewBox="0 0 16 16">
-                                <path d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"/>
-                              </svg>
-                                <h2 class="card-title">R3 000 000</h2>
-                                <p class="card-text">R55 000 p/m</p>
-                                <h3>BMW X7 SUV</h3>
-                                <h4>Used Car</h4>
-                                <p class="card-text">2021- 9 900 km- automatic</p>
-                                <i class="bi-geo-alt-fill">Umhlanga Ridgeside,KwaZulu-Natal</i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card m-2" style="max-width: 800px;">
-                    <div class="row g-0">
-                        <div class="col-sm-5">
-                            <img src="https://asandahdevs.github.io/carBuyingSite.github.io/images/Range rover sport.jfif" class="card-img-top h-100" alt="image">
-                        </div>
-                        <div class="col-sm-7">
-                            <div class="card-body"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-suit-heart" onclick="colorChange(this)" viewBox="0 0 16 16">
-                                <path d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"/>
-                              </svg>
-                                <h2 class="card-title">R3 700 000</h2>
-                                <p class="card-text">R65 700 p/m</p>
-                                <h3>Land Rover Range Rover sport SVR SUV</h3>
-                                <h4>New Car</h4>
-                                <p class="card-text">2022- 148 km- automatic</p>
-                                <i class="bi-geo-alt-fill">Kloof,KwaZulu-Natal</i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card m-2" style="max-width: 800px;">
-                    <div class="row g-0">
-                        <div class="col-sm-5">
-                            <img src="https://asandahdevs.github.io/carBuyingSite.github.io/images/Bentley Bentayga W12.jfif" class="card-img-top h-100" alt="image">
-                        </div>
-                        <div class="col-sm-7">
-                            <div class="card-body"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-suit-heart" onclick="colorChange(this)" viewBox="0 0 16 16">
-                                <path d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"/>
-                              </svg>
-                                <h2 class="card-title">R3 500 000</h2>
-                                <p class="card-text">R64 400 p/m</p>
-                                <h3>Bentley Bentayga W12 SUV</h3>
-                                <h4>Used Car</h4>
-                                <p class="card-text">2017- 48 000 km- automatic</p>
-                                <i class="bi-geo-alt-fill">Mount Edgecombe Country Estate,KwaZulu-Natal</i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <nav>
-                <ul class="pagination justify-content-center">
-                    <li class="page-item disabled"><a href="#" class="page-link">&laquo;</a></li>
-                    <li class="page-item active"><a href="index.html" class="page-link">1</a></li>
-                    <li class="page-item"><a href="page 2.html" class="page-link">2</a></li>
-                    <li class="page-item"><a href="page 3.html" class="page-link">3</a></li>
-                    <li class="page-item"><a href="page 4.html" class="page-link">4</a></li>
-                    <li class="page-item"><a href="page 5.html" class="page-link">5</a></li>
-                    <li class="page-item disabled"><a href="#" class="page-link">&raquo;</a></li>
-                </ul>
-            </nav>
-        </section>
-        <section class=" bg-primary">
-            <div class="container">
-            <h2>Popular Dealers</h2>
-            <p><a href="#" class="text-white nav-link">View all dealers</a></p>
-                <div class="row justify-content-center py-3">
-                    <div class="col-sm-2 m-1">
-                        <div class="card">
-                            <img class="card-img-top"src="https://asandahdevs.github.io/carBuyingSite.github.io/images/autotrader.png" alt="autotrader" height="150" >
-                            <div class="card-body">
-                                <button class="btn btn-primary"><a href="https://www.autotrader.co.za/cars-for-sale?gclid=CjwKCAjwuYWSBhByEiwAKd_n_ubb_JgKPD-UTm9MihiOCOeTf9ZZxXx6O9cic_R8GZN1lszVIbUX7BoCcloQAvD_BwE" target="_blank" class="nav-link">Click me</a></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-2 m-1">
-                        <div class="card">
-                            <img class="card-img-top"src="https://asandahdevs.github.io/carBuyingSite.github.io/images/carwow.png" alt="carwow" height="150" >
-                            <div class="card-body">
-                                <button class="btn btn-primary"><a href="https://www.carwow.co.uk/#gref" target="_blank" class="nav-link">Click me</a></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-2 m-1">
-                        <div class="card">
-                            <img class="card-img-top"src="https://asandahdevs.github.io/carBuyingSite.github.io/images/webuycars.png" alt="webuycars" height="150" >
-                            <div class="card-body">
-                                <button class="btn btn-primary"><a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwi4seu51-n2AhUX1ncKHYk4DZ8YABAAGgJlZg&ae=2&ohost=www.google.com&cid=CAESaeD2p2Ol3z4dF8MFVI1Ghcucpvd1ZNrARxLo9Gup-b2grFztGNZwKJcxINfDN0HrR-sGRcRk4oI46haAjCgVGK7TYSdjSxnq_rgBebOTfGW-WGLlk3dRn2aaWMvfI8FXsYnWYBxZM5L0tQ&sig=AOD64_2010HbrSc-BCso5EfF5xjiFUdHTQ&q&adurl&ved=2ahUKEwiByOK51-n2AhXGSvEDHdliBFQQ0Qx6BAgDEAE"target="_blank" class="nav-link">Click me</a></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-2 m-1">
-                        <div class="card">
-                            <img class="card-img-top"src="https://asandahdevs.github.io/carBuyingSite.github.io/images/cars_4_africa.png" alt="cars_4_africa" height="150" >
-                            <div class="card-body">
-                                <button class="btn btn-primary"><a href="https://cars4africa.co.za/" target="_blank" class="nav-link">Click me</a></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-2 m-1">
-                        <div class="card">
-                            <img class="card-img-top"src="https://asandahdevs.github.io/carBuyingSite.github.io/images/the_car-dealer.png" alt="the car dealer" height="150" >
-                            <div class="card-body">
-                                <button class="btn btn-primary"><a href="https://www.thecardealer.co.za/"target="_blank" class="nav-link">Click me</a></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <h2 class="text-white">Related Car Reviews</h2>
-                    <div class="row py-3">
-                        <div class="col-sm-3 m-1">
-                            <div class="card">
-                                <img class="card-img-top"src="https://asandahdevs.github.io/carBuyingSite.github.io/images/A merc.jfif" alt="A merc" height="150" >
-                                <div class="card-body text-start">
-                                    <h3 class="lead"><strong>Mercedes C200 (2022)</strong></h3>
-                                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                                    <button type="submit" class="btn btn-info">Read More &raquo;</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 m-1">
-                            <div class="card">
-                                <img class="card-img-top"src="https://asandahdevs.github.io/carBuyingSite.github.io/images/A beemer.jfif" alt="A beemer" height="150" >
-                                <div class="card-body text-start">
-                                    <h3 class="lead"><strong>BMW 5 series(2022)</strong></h3>
-                                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                                    <button type="submit" class="btn btn-info">Read More &raquo;</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 m-1">
-                            <div class="card">
-                                <img class="card-img-top"src="https://asandahdevs.github.io/carBuyingSite.github.io/images/Audi RS3.jfif" alt="An audi rs3" height="150" >
-                                <div class="card-body text-start">
-                                    <h3 class="lead"><strong>Audi RS 3 (2022)</strong></h3>
-                                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                                    <button type="submit" class="btn btn-info">Read More &raquo;</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 m-1 ">
-                            <div class="card">
-                                <img class="card-img-top"src="https://asandahdevs.github.io/carBuyingSite.github.io/images/Golf 8 gti.jfif" alt="mark 8 gti" height="150" >
-                                <div class="card-body text-start">
-                                    <h3 class="lead"><strong>VW Golf 8 GTI (2021)</strong></h3>
-                                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                                    <button type="submit" class="btn btn-info">Read More &raquo;</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-        </section>
-        <section class="bg-primary">
-            <div class="container">
-                <div class="row p-3">
-                    <div class="col-sm-6">
-                        <p><strong>Sign-up to our weekly Newsletter</strong></p>
-                    </div>
-                    <div class="col-sm-6">
-                        <form>
-                            <div class="input-group">
-                                <input type="email"  placeholder="email..." class="form-control" required>
-                                <button type="button" class="btn btn-info btn-sm mx-2"><a href="#" class="nav-link" onclick="alert('Success!')">Sign-up</a></button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <div class="row m-2 justify-content-center">
-                    <div class="col-sm-2">
-                        <h4 class="text-white">Motortrader</h4>
-                        <hr>
-                            <p>About us</p>
-                            <p>Contact us</p>
-                            <p>Work for motortrader</p>
-                            <p>Feedback</p>
-                            <p>Frequently Asked Questions</p>
-                    </div>
-                    <div class="col-sm-2 ">
-                        <h4 class="text-white">Dealers</h4>
-                        <hr>
-                            <p>Manage</p>
-                    </div>
-                    <div class="col-sm-2">
-                        <h4 class="text-white">Other Vehicles</h4>
-                        <hr>
-                            <p>Used & New Cars</p>
-                            <p>Bikes</p>
-                            <p>Trucks,Tractors,Vans & More</p>
-                            <p>Boats & Caravans</p>
-                    </div>
-                    <div class="col-sm-2">
-                        <h4 class="text-white">Services</h4>
-                        <hr>
-                            <p>Finance Calculator</p>
-                            <p>Car Finance</p>
-                            <p>Car Insurance</p>
-                    </div>
-                    <div class="col-sm-2">
-                        <h4 class="text-white">Customers</h4>
-                        <hr>
-                            <p>Sell a Car</p>
-                            <p>Safety & Security</p>
-                            <p>Terms & Conditions</p>
-                            <p>Privacy Policy</p>
-                            <p>Cookie Policy</p>
-                            <p>PAIA Manual</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <hr>
-    <footer>
+      </section>
+      <section>
         <div class="container">
-            <div class="row text-white">
-                <div class="col-sm-6">
-                    <p><i class="bi-globe2"></i><strong><em>Motortrader</em></strong> &copy; Asanda Majola 2022</p>
-                </div>
-                <div class="col-sm-6 ">
-                    <p>Downlaod The App <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-apple" viewBox="0 0 16 16">
-                        <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z"/>
-                        <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z"/>
-                      </svg> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-xbox" viewBox="0 0 16 16">
-                        <path d="M7.202 15.967a7.987 7.987 0 0 1-3.552-1.26c-.898-.585-1.101-.826-1.101-1.306 0-.965 1.062-2.656 2.879-4.583C6.459 7.723 7.897 6.44 8.052 6.475c.302.068 2.718 2.423 3.622 3.531 1.43 1.753 2.088 3.189 1.754 3.829-.254.486-1.83 1.437-2.987 1.802-.954.301-2.207.429-3.239.33Zm-5.866-3.57C.589 11.253.212 10.127.03 8.497c-.06-.539-.038-.846.137-1.95.218-1.377 1.002-2.97 1.945-3.95.401-.417.437-.427.926-.263.595.2 1.23.638 2.213 1.528l.574.519-.313.385C4.056 6.553 2.52 9.086 1.94 10.653c-.315.852-.442 1.707-.306 2.063.091.24.007.15-.3-.319Zm13.101.195c.074-.36-.019-1.02-.238-1.687-.473-1.443-2.055-4.128-3.508-5.953l-.457-.575.494-.454c.646-.593 1.095-.948 1.58-1.25.381-.237.927-.448 1.161-.448.145 0 .654.528 1.065 1.104a8.372 8.372 0 0 1 1.343 3.102c.153.728.166 2.286.024 3.012a9.495 9.495 0 0 1-.6 1.893c-.179.393-.624 1.156-.82 1.404-.1.128-.1.127-.043-.148ZM7.335 1.952c-.67-.34-1.704-.705-2.276-.803a4.171 4.171 0 0 0-.759-.043c-.471.024-.45 0 .306-.358A7.778 7.778 0 0 1 6.47.128c.8-.169 2.306-.17 3.094-.005.85.18 1.853.552 2.418.9l.168.103-.385-.02c-.766-.038-1.88.27-3.078.853-.361.176-.676.316-.699.312a12.246 12.246 0 0 1-.654-.319Z"/>
-                      </svg> | <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-                      </svg> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
-                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-                      </svg> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
-                        <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
-                      </svg> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-                      </svg> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
-                        <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"/>
-                      </svg></p>
-                </div>
+          <div class="row m-2 justify-content-center">
+            <div class="col-sm-2">
+              <h4 class="text-white">Motortrader</h4>
+              <hr />
+              <p>About us</p>
+              <p>Contact us</p>
+              <p>Work for motortrader</p>
+              <p>Feedback</p>
+              <p>Frequently Asked Questions</p>
             </div>
+            <div class="col-sm-2">
+              <h4 class="text-white">Dealers</h4>
+              <hr />
+              <p>Manage</p>
+            </div>
+            <div class="col-sm-2">
+              <h4 class="text-white">Other Vehicles</h4>
+              <hr />
+              <p>Used & New Cars</p>
+              <p>Bikes</p>
+              <p>Trucks,Tractors,Vans & More</p>
+              <p>Boats & Caravans</p>
+            </div>
+            <div class="col-sm-2">
+              <h4 class="text-white">Services</h4>
+              <hr />
+              <p>Finance Calculator</p>
+              <p>Car Finance</p>
+              <p>Car Insurance</p>
+            </div>
+            <div class="col-sm-2">
+              <h4 class="text-white">Customers</h4>
+              <hr />
+              <p>Sell a Car</p>
+              <p>Safety & Security</p>
+              <p>Terms & Conditions</p>
+              <p>Privacy Policy</p>
+              <p>Cookie Policy</p>
+              <p>PAIA Manual</p>
+            </div>
+          </div>
         </div>
+      </section>
+    </main>
+    <hr />
+    <footer>
+      <div class="container">
+        <div class="row text-white">
+          <div class="col-sm-6">
+            <p>
+              <i class="bi-globe2"></i
+              ><strong><em>Motortrader</em></strong> &copy; Asanda Majola 2022
+            </p>
+          </div>
+          <div class="col-sm-6">
+            <p>
+              Downlaod The App
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-apple"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z"
+                />
+                <path
+                  d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-xbox"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M7.202 15.967a7.987 7.987 0 0 1-3.552-1.26c-.898-.585-1.101-.826-1.101-1.306 0-.965 1.062-2.656 2.879-4.583C6.459 7.723 7.897 6.44 8.052 6.475c.302.068 2.718 2.423 3.622 3.531 1.43 1.753 2.088 3.189 1.754 3.829-.254.486-1.83 1.437-2.987 1.802-.954.301-2.207.429-3.239.33Zm-5.866-3.57C.589 11.253.212 10.127.03 8.497c-.06-.539-.038-.846.137-1.95.218-1.377 1.002-2.97 1.945-3.95.401-.417.437-.427.926-.263.595.2 1.23.638 2.213 1.528l.574.519-.313.385C4.056 6.553 2.52 9.086 1.94 10.653c-.315.852-.442 1.707-.306 2.063.091.24.007.15-.3-.319Zm13.101.195c.074-.36-.019-1.02-.238-1.687-.473-1.443-2.055-4.128-3.508-5.953l-.457-.575.494-.454c.646-.593 1.095-.948 1.58-1.25.381-.237.927-.448 1.161-.448.145 0 .654.528 1.065 1.104a8.372 8.372 0 0 1 1.343 3.102c.153.728.166 2.286.024 3.012a9.495 9.495 0 0 1-.6 1.893c-.179.393-.624 1.156-.82 1.404-.1.128-.1.127-.043-.148ZM7.335 1.952c-.67-.34-1.704-.705-2.276-.803a4.171 4.171 0 0 0-.759-.043c-.471.024-.45 0 .306-.358A7.778 7.778 0 0 1 6.47.128c.8-.169 2.306-.17 3.094-.005.85.18 1.853.552 2.418.9l.168.103-.385-.02c-.766-.038-1.88.27-3.078.853-.361.176-.676.316-.699.312a12.246 12.246 0 0 1-.654-.319Z"
+                />
+              </svg>
+              |
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-facebook"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-twitter"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-youtube"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-instagram"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-tiktok"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"
+                />
+              </svg>
+            </p>
+          </div>
+        </div>
+      </div>
     </footer>
-<!--loading a JS bundle with Popper-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
-<!--importing an external Javascript file-->  
-<script defer src="index.js"></script>
-</body>
+    <!--loading a JS bundle with Popper-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!--importing an external Javascript file-->
+    <script defer src="index.js"></script>
+  </body>
 </html>
