@@ -108,7 +108,7 @@
               </div>
             </div>
             <a href="page 5.html" class="nav-item nav-link"
-              ><i class="bi-person-fill"></i>Sign in for your Shortlist</a
+              ><i class="bi-person-fill"></i>Sign-up for Shortlisting</a
             >
           </div>
         </div>
@@ -225,7 +225,7 @@
       </section>
       <section class="m-2">
         <p>
-          <a href="Homepage.html"><strong>Home</strong></a> > Cars for sale
+          <a href="index.html"><strong>Home</strong></a> > Cars for sale
         </p>
         <p class="text-center"><em>-Featured-listings-</em></p>
         <div class="grid">
@@ -456,7 +456,7 @@
                   class="card-img-top"
                   src="https://asandahdevs.github.io/carBuyingSite.github.io/images/autotrader.png"
                   alt="autotrader"
-                  height="150"
+                  height="125"
                 />
                 <div class="card-body">
                   <button class="btn btn-primary">
@@ -476,7 +476,7 @@
                   class="card-img-top"
                   src="https://asandahdevs.github.io/carBuyingSite.github.io/images/carwow.png"
                   alt="carwow"
-                  height="150"
+                  height="125"
                 />
                 <div class="card-body">
                   <button class="btn btn-primary">
@@ -496,7 +496,7 @@
                   class="card-img-top"
                   src="https://asandahdevs.github.io/carBuyingSite.github.io/images/webuycars.png"
                   alt="webuycars"
-                  height="150"
+                  height="125"
                 />
                 <div class="card-body">
                   <button class="btn btn-primary">
@@ -516,7 +516,7 @@
                   class="card-img-top"
                   src="https://asandahdevs.github.io/carBuyingSite.github.io/images/cars_4_africa.png"
                   alt="cars_4_africa"
-                  height="150"
+                  height="125"
                 />
                 <div class="card-body">
                   <button class="btn btn-primary">
@@ -536,7 +536,7 @@
                   class="card-img-top"
                   src="https://asandahdevs.github.io/carBuyingSite.github.io/images/the_car-dealer.png"
                   alt="the car dealer"
-                  height="150"
+                  height="125"
                 />
                 <div class="card-body">
                   <button class="btn btn-primary">
@@ -563,7 +563,7 @@
                   class="card-img-top"
                   src="https://asandahdevs.github.io/carBuyingSite.github.io/images/A merc.jfif"
                   alt="A merc"
-                  height="150"
+                  height="125"
                 />
                 <div class="card-body text-start">
                   <h3 class="lead"><strong>Mercedes C200 (2022)</strong></h3>
@@ -582,7 +582,7 @@
                   class="card-img-top"
                   src="https://asandahdevs.github.io/carBuyingSite.github.io/images/A beemer.jfif"
                   alt="A beemer"
-                  height="150"
+                  height="125"
                 />
                 <div class="card-body text-start">
                   <h3 class="lead"><strong>BMW 5 series(2022)</strong></h3>
@@ -601,7 +601,7 @@
                   class="card-img-top"
                   src="https://asandahdevs.github.io/carBuyingSite.github.io/images/Audi RS3.jfif"
                   alt="An audi rs3"
-                  height="150"
+                  height="125"
                 />
                 <div class="card-body text-start">
                   <h3 class="lead"><strong>Audi RS 3 (2022)</strong></h3>
@@ -620,7 +620,7 @@
                   class="card-img-top"
                   src="https://asandahdevs.github.io/carBuyingSite.github.io/images/Golf 8 gti.jfif"
                   alt="mark 8 gti"
-                  height="150"
+                  height="125"
                 />
                 <div class="card-body text-start">
                   <h3 class="lead"><strong>VW Golf 8 GTI (2021)</strong></h3>
@@ -643,20 +643,26 @@
               <p><strong>Sign-up to our weekly Newsletter</strong></p>
             </div>
             <div class="col-sm-6">
-              <form>
+              <form name="signupForm" id="signupForm">
                 <div class="input-group">
                   <input
                     type="email"
-                    placeholder="email..."
+                    placeholder="user@email.com"
                     class="form-control"
+                    pattern="[a-z]+@[a-z]+.com"
+                    title="email address must contain the @ symbol followed by an appropriate domain preferable the .com domain"
                     required
                   />
-                  <button type="button" class="btn btn-info btn-sm mx-2">
-                    <a href="#" class="nav-link" onclick="alert('Success!')"
-                      >Sign-up</a
-                    >
+                  <button type="submit" class="btn btn-info btn-sm mx-2">
+                    Sign-up
                   </button>
                 </div>
+                <p>valid email addresses should contain:</p>
+                <ul class="text-white">
+                  <li>lowercases</li>
+                  <li>@ symbol</li>
+                  <li>appropriate domaine name ( only .com is accepted)</li>
+                </ul>
               </form>
             </div>
           </div>

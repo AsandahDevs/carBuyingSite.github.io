@@ -108,7 +108,7 @@
               </div>
             </div>
             <a href="#" class="nav-item nav-link"
-              ><i class="bi-person-fill"></i>Sign in for your Shortlist</a
+              ><i class="bi-person-fill"></i>Sign-up for Shortlisting</a
             >
           </div>
         </div>
@@ -118,7 +118,7 @@
       <section class="container bg-gradient mt-5 p-5 text-white">
         <form name="form">
           <div class="mb-2">
-            <label class="form-label" for="userId">UserName</label>
+            <label class="form-label" for="userId">Full Names</label>
             <input
               type="text"
               name="username"
@@ -127,7 +127,7 @@
               class="form-control"
               style="width: 300px"
               pattern="[A-Za-z\s]+"
-              title="Alphanumeric names are not allowed"
+              title="Alphanumeric names are strongly discouraged"
               required
             />
             <p class="lead m-1" style="font-size: 15px">
@@ -135,6 +135,29 @@
             </p>
           </div>
           <br />
+          <div class="mb-2">
+            <label class="form-label" for="usermail">Email Adress</label>
+            <input
+              type="email"
+              id="usermail"
+              name="email address"
+              placeholder="username@domain.com"
+              class="form-control"
+              style="width: 300px"
+              pattern="[a-z]+@[a-z]+.com"
+              title="email address must contain the @ symbol
+            followed by an appropriate domain name preferable the .com domain"
+              required
+            />
+            <!--The pattern attribute allows for a regular expression in order to match against user input data for validation-->
+            <p>valid email addresses should contain:</p>
+            <ul class="text-white">
+              <li>lowercases</li>
+              <li>@ symbol</li>
+              <li>an appropriate domaine name ( only .com is accepted)</li>
+            </ul>
+            <br />
+          </div>
           <div class="mb-2">
             <label class="form-label" for="keyword">Password</label>
             <input
@@ -144,7 +167,7 @@
               placeholder="****"
               class="form-control"
               style="width: 300px"
-              pattern="[a-z]+[0-9]+"
+              pattern="[A-za-z]+[0-9]+"
               title="Alphanumeric names only"
               required
             />
