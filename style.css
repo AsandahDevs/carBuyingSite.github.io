@@ -4,14 +4,7 @@ body {
   padding-top: 70px;
   content: " ";
 }
-/* locks image ratio */
-.image-ratio {
-  display: block;
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
-}
+
 /* Setting the stroke property to green using rgb values (0, 0, 255) */
 
 .custom-toggler .navbar-toggler-icon {
@@ -128,10 +121,6 @@ hr {
   float: right;
 }
 
-.error {
-  color: red;
-}
-
 .card-img-top:hover {
   transform: rotate(45deg);
 }
@@ -140,4 +129,20 @@ hr {
 }
 #searcher {
   border: 1rem solid transparent;
+}
+
+/*The below code invokes continuous horizontal scrolling of content*/
+.horizontal-scroller {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.card {
+  flex: 0 0 auto;
+}
+.card-size {
+  width: 225px;
+  height: auto;
+  margin: 10px 5px;
 }
