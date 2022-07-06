@@ -10,7 +10,4 @@
 
 ![asandahdevs github io_carBuyingSite github io_page%202 html](https://user-images.githubusercontent.com/89397749/177532826-f1ca9981-a5c6-4e46-8f4f-fd715ccf8ee6.png)
 
-https://user-images.githubusercontent.com/89397749/177534777-c01a4a91-ab0b-404c-ad8b-048a31b31af6.mp4
-
-
-
+<https://user-images.githubusercontent.com/89397749/177534777-c01a4a91-ab0b-404c-ad8b-048a31b31af6.mp4>
