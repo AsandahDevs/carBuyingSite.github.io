@@ -6,9 +6,9 @@
 
 ## Preview
 
-![screenshot](https://github.com/AsandahDevs/majola.github.io/blob/main/images/Screenshot%20(21).png)
+![asandahdevs github io_carBuyingSite github io_](https://user-images.githubusercontent.com/89397749/177527994-58a2ee10-91fe-4b95-bb0e-c2eecde6e8eb.png)
 
-![screenshot](https://github.com/AsandahDevs/majola.github.io/blob/main/images/Screenshot%20(22).png)
+![asandahdevs github io_carBuyingSite github io_index html(iPhone 12 Pro)](https://user-images.githubusercontent.com/89397749/177528108-0ea2727b-c0d7-47ba-bcd7-597b98b79a77.png)
 
 ![screenshot](https://github.com/AsandahDevs/majola.github.io/blob/main/images/Screenshot%20(24).png)
 
