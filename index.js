@@ -40,11 +40,6 @@ const carVehicleCheckLink = document.getElementById("scriptFive");
 carVehicleCheckLink.setAttribute("href", "https://www.vehiclecheck.co.za/");
 carVehicleCheckLink.setAttribute("target", "_blank");
 
-let options = document.getElementsByTagName("option");
-for (let i = 0; i < options.length; i++) {
-  console.log(options[i].value); // work-in-progress
-}
-
 //A function to perfom a filtering operation.
 function searchFilter() {
   let searchBoxValue = document.getElementById("searcher").value;
