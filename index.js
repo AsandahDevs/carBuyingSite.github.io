@@ -41,14 +41,8 @@ carVehicleCheckLink.setAttribute("href", "https://www.vehiclecheck.co.za/");
 carVehicleCheckLink.setAttribute("target", "_blank");
 
 let options = document.getElementsByTagName("option");
-// console.log(options);
 for (let i = 0; i < options.length; i++) {
-  options[i].onclick = function () {
-    let item = document.createElement("p");
-    let itemText = document.createTextNode(options[i].value);
-    item.appendChild(itemText);
-    return document.getElementById("searcher").appendChild(item);
-  };
+  console.log(options[i].value); // work-in-progress
 }
 
 //A function to perfom a filtering operation.
