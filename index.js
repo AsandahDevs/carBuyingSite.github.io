@@ -57,3 +57,20 @@ function searchFilter() {
 
 //An eventlistener that will 'listen' to any user inputs in order to invoke the 'searchFilter' function.
 document.getElementById("searcher").addEventListener("input", searchFilter);
+
+//A function that will filter content based on the currently selected option in the dropdown lists
+function optionsFilter() {
+  let selectTagsValue = document.querySelector("select").value;
+  let cards = document.querySelectorAll(".card");
+  for (let i = 0; i < cards.length; i++) {
+    if (
+      cards[i].textContent.toLowerCase().includes(selectTagsValue.toLowerCase())
+    ) {
+      cards[i].classList.remove("hidden");
+    } else {
+      cards[i].classList.add("hidden");
+    }
+  }
+}
+
+document.querySelector("select").addEventListener("change", optionsFilter);
