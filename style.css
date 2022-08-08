@@ -121,9 +121,6 @@ hr {
   float: right;
 }
 
-.card-img-top:hover {
-  transform: rotate(45deg);
-}
 .hidden {
   display: none;
 }
