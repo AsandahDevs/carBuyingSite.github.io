@@ -130,3 +130,15 @@ function bodyTypeFilter() {
 }
 
 document.getElementById("Body-type").addEventListener("change", bodyTypeFilter); // the change event will listen for any 'change in value', which are options selected by the user, to the body-type dropdown menu.
+
+const vehichlesForSale = document.querySelectorAll(".card.m-2");
+
+/*Converting the 'vehiclesForSale' from an HTMLcollection into an array for iteration purposes.
+Thereafter, addinng an animation class for each element*/
+
+Array.from(vehichlesForSale).forEach(function (vehichleForSale) {
+  return vehichleForSale.classList.add(
+    "animate__animated",
+    "animate__fadeInLeft"
+  );
+});
