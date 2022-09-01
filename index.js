@@ -44,15 +44,13 @@ carVehicleCheckLink.setAttribute("target", "_blank");
 function searchFilter() {
   let searchBoxValue = document.getElementById("searcher").value;
   let cards = document.querySelectorAll(".card");
-  for (let i = 0; i < cards.length; i++) {
-    if (
-      cards[i].textContent.toLowerCase().includes(searchBoxValue.toLowerCase())
-    ) {
-      cards[i].classList.remove("hidden");
+  Array.from(cards).forEach((card) => {
+    if (card.textContent.toLowerCase().includes(searchBoxValue.toLowerCase())) {
+      card.classList.remove("hidden");
     } else {
-      cards[i].classList.add("hidden");
+      card.classList.add("hidden");
     }
-  }
+  });
 }
 
 //An eventlistener that will 'listen' to any user inputs in order to invoke the 'searchFilter' function.
@@ -62,15 +60,13 @@ document.getElementById("searcher").addEventListener("input", searchFilter);
 function minimumPriceFilter() {
   let minPriceValue = document.getElementById("min-price").value;
   let cards = document.querySelectorAll(".card");
-  for (let i = 0; i < cards.length; i++) {
-    if (
-      cards[i].textContent.toLowerCase().includes(minPriceValue.toLowerCase())
-    ) {
-      cards[i].classList.remove("hidden");
+  Array.from(cards).forEach((card) => {
+    if (card.textContent.toLowerCase().includes(minPriceValue.toLowerCase())) {
+      card.classList.remove("hidden");
     } else {
-      cards[i].classList.add("hidden");
+      card.classList.add("hidden");
     }
-  }
+  });
 }
 
 document
@@ -80,15 +76,13 @@ document
 function maximumPriceFilter() {
   let maxPriceValue = document.getElementById("max-price").value;
   let cards = document.querySelectorAll(".card");
-  for (let i = 0; i < cards.length; i++) {
-    if (
-      cards[i].textContent.toLowerCase().includes(maxPriceValue.toLowerCase())
-    ) {
-      cards[i].classList.remove("hidden");
+  Array.from(cards).forEach((card) => {
+    if (card.textContent.toLowerCase().includes(maxPriceValue.toLowerCase())) {
+      card.classList.remove("hidden");
     } else {
-      cards[i].classList.add("hidden");
+      card.classList.add("hidden");
     }
-  }
+  });
 }
 
 document
@@ -98,17 +92,15 @@ document
 function locationFilter() {
   let selectedLocation = document.getElementById("Location").value;
   let cards = document.querySelectorAll(".card");
-  for (let i = 0; i < cards.length; i++) {
+  Array.from(cards).forEach((card) => {
     if (
-      cards[i].textContent
-        .toLowerCase()
-        .includes(selectedLocation.toLowerCase())
+      card.textContent.toLowerCase().includes(selectedLocation.toLowerCase())
     ) {
-      cards[i].classList.remove("hidden");
+      card.classList.remove("hidden");
     } else {
-      cards[i].classList.add("hidden");
+      card.classList.add("hidden");
     }
-  }
+  });
 }
 
 document.getElementById("Location").addEventListener("change", locationFilter); // the change event will listen for any 'change in value',which are options selected by the user, to the location dropdown menu.
@@ -116,17 +108,15 @@ document.getElementById("Location").addEventListener("change", locationFilter); 
 function bodyTypeFilter() {
   let selectedBodyType = document.getElementById("Body-type").value;
   let cards = document.querySelectorAll(".card");
-  for (let i = 0; i < cards.length; i++) {
+  Array.from(cards).forEach((card) => {
     if (
-      cards[i].textContent
-        .toLowerCase()
-        .includes(selectedBodyType.toLowerCase())
+      card.textContent.toLowerCase().includes(selectedBodyType.toLowerCase())
     ) {
-      cards[i].classList.remove("hidden");
+      card.classList.remove("hidden");
     } else {
-      cards[i].classList.add("hidden");
+      card.classList.add("hidden");
     }
-  }
+  });
 }
 
 document.getElementById("Body-type").addEventListener("change", bodyTypeFilter); // the change event will listen for any 'change in value', which are options selected by the user, to the body-type dropdown menu.
