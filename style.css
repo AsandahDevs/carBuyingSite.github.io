@@ -1,6 +1,10 @@
 body {
   background-color: black;
   background-image: repeating-conic-gradient(blue 10%, black 20%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
   padding-top: 70px;
   content: " ";
 }
