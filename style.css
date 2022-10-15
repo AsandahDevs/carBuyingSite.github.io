@@ -163,3 +163,18 @@ hr {
   object-fit: cover;
   height: 115px;
 }
+
+/*removing default border styling on hamburger nav icon upon a click or focus event */
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: 1px solid black; /* Do not interfer with this property bu setting it to 'none' as it is considered bad practice for accessibility purposes especially when an element is focused.*/
+  box-shadow: none !important;
+  border: none;
+}
+
+/* removing default border */
+button.navbar-toggler {
+  border: none;
+}
